@@ -4,6 +4,8 @@
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
+# zmodload zsh/zprof
+
 # init MacTeX
 eval `/usr/libexec/path_helper -s`
 
