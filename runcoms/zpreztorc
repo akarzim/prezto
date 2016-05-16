@@ -32,6 +32,7 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'osx' \
+  'git' \
   'syntax-highlighting' \
   'history-substring-search' \
   'completion' \
@@ -66,7 +67,10 @@ zstyle ':prezto:module:editor' key-bindings 'vi'
 #
 
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
-# zstyle ':prezto:module:git:status:ignore' submodules 'all'
+zstyle ':prezto:module:git:status:ignore' submodules 'all'
+
+# Set the format of the git-log output to 'brief', 'oneline', or 'medium'.
+zstyle ':prezto:module:git:log:context' format 'oneline'
 
 #
 # GNU Utility
