@@ -14,3 +14,6 @@ fi
 
 ## Done by prezto ruby module
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# init PYenv
+# eval "$(pyenv init -)"

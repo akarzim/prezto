@@ -39,6 +39,7 @@ zstyle ':prezto:load' pmodule \
   'rails' \
   'prompt' \
   # 'tmux' \
+  # 'python' \
 
 #
 # Deer
