@@ -20,5 +20,8 @@ fi
 # export NVM_DIR=~/.nvm
 # source $(brew --prefix nvm)/nvm.sh
 
+# HomeBrew
+test -e "${HOME}/.homebrew.sh" && source "${HOME}/.homebrew.sh"
+
 # init PYenv
 # eval "$(pyenv init -)"
