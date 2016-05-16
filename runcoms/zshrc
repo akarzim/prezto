@@ -4,6 +4,8 @@
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
+# init MacTeX
+eval `/usr/libexec/path_helper -s`
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
