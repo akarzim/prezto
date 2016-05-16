@@ -15,5 +15,10 @@ fi
 ## Done by prezto ruby module
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
+## Done by prezto nvm module
+# NVM
+# export NVM_DIR=~/.nvm
+# source $(brew --prefix nvm)/nvm.sh
+
 # init PYenv
 # eval "$(pyenv init -)"
