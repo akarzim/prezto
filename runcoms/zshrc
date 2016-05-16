@@ -11,3 +11,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+## Done by prezto ruby module
+# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
