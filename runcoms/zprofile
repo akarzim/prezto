@@ -23,6 +23,12 @@ export VISUAL='vi'
 export PAGER='less'
 
 #
+# Calendar
+#
+
+alias wcal='ncal -w | GREP_COLOR="01;34" grep --color -EC6 "$(date +%-e | sed "s/ //g")"'
+
+#
 # Language
 #
 
