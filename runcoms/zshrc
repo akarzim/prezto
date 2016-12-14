@@ -14,8 +14,8 @@ test -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" && source "${ZDOTDIR:-$HOME}/.zpre
 
 # Customize to your needs...
 
-## Done by prezto ruby module
-# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# Load rbenv automatically
+eval "$(rbenv init -)"
 
 ## Done by prezto nvm module
 # NVM
