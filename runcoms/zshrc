@@ -47,3 +47,13 @@ precmd() {
 
    PROMPT="%(?.%F{${PURE_PROMPT_COLOR_DOCKER}}.%F{red})${PURE_PROMPT_SYMBOL:-❯}%f "
 }
+
+# FZF
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='ag -g ""'
+export FZF_DEFAULT_OPTS='--color=16'
+# export FZF_DEFAULT_OPTS='
+#   --color fg:124,bg:16,hl:202,fg+:214,bg+:52,hl+:231
+#   --color info:52,prompt:196,spinner:208,pointer:196,marker:208
+# '
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
