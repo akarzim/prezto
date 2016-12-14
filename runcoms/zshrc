@@ -10,9 +10,7 @@
 eval `/usr/libexec/path_helper -s`
 
 # Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
+test -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" && source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 
 # Customize to your needs...
 
@@ -31,7 +29,7 @@ test -e "${HOME}/.homebrew.sh" && source "${HOME}/.homebrew.sh"
 # eval "$(pyenv init -)"
 
 # added by travis gem
-[ -f "${HOME}/.travis/travis.sh" ] && source "${HOME}/.travis/travis.sh"
+test -f "${HOME}/.travis/travis.sh" && source "${HOME}/.travis/travis.sh"
 
 # iTerm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
