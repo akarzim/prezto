@@ -36,3 +36,14 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # Source Tmuxinator
 test -e "${HOME}/.tmuxinator.zsh" && source "${HOME}/.tmuxinator.zsh"
+
+# Docker prompt
+precmd() {
+   if [[ -f "./docker-compose.yml" && -n "$DOCKER_MACHINE_NAME" ]]; then
+       PURE_PROMPT_COLOR_DOCKER=blue
+   else
+       PURE_PROMPT_COLOR_DOCKER=${PURE_PROMPT_COLOR_NORMAL:-magenta}
+   fi
+
+   PROMPT="%(?.%F{${PURE_PROMPT_COLOR_DOCKER}}.%F{red})${PURE_PROMPT_SYMBOL:-❯}%f "
+}
