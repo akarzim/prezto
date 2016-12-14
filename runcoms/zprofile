@@ -18,9 +18,9 @@ fi
 #
 
 alias vi='nvim'
-export EDITOR='vi'
-export VISUAL='vi'
-export PAGER='less'
+export EDITOR=`which nvim`
+export VISUAL=`which nvim`
+export PAGER=`which less`
 
 #
 # Calendar
