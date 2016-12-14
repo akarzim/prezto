@@ -33,3 +33,6 @@ test -f "${HOME}/.travis/travis.sh" && source "${HOME}/.travis/travis.sh"
 
 # iTerm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Source Tmuxinator
+test -e "${HOME}/.tmuxinator.zsh" && source "${HOME}/.tmuxinator.zsh"
